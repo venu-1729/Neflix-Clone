@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="neflix.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">NETFLIX</div>
+    <input type="text" placeholder="Search for movies or TV shows" class="search-bar">
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1 id="hero-title"></h1>
+        <p id="hero-overview"></p>
+        <div class="hero-buttons">
+          <button class="btn">Play</button>
+          <button class="btn btn-secondary">More Info</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="movies-container"></div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="neflix.js"></script>
+</body>
+</html>
